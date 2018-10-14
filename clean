@@ -1,0 +1,7 @@
+#! /bin/bash
+
+ARTIFACT_NAME=$1
+ARTIFACT_FULLPATH="./resource/$ARTIFACT_NAME.wasm"
+echo "Removing WASM Artifact"
+echo $ARTIFACT_NAME
+rm $ARTIFACT_FULLPATH

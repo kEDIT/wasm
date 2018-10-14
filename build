@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Building wasm artifact..."
+GOARCH=wasm GOOS=js go build -o $1.wasm ./wasm_program/main.go && \
+mv $1.wasm ./resource/
+echo "Finished."
